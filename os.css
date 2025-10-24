@@ -1,0 +1,97 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+.container {
+    width:100%;
+    min-height:100vh;
+    background:linear-gradient(135deg,#153677,#4e085f);
+    padding:10px;
+}
+.todo-app {
+    width:100%;
+    max-width:500px;
+    /* height:300px; */
+    background:#fff;
+    margin:100px auto 20px;
+    padding:40px 30px 70px;
+    border-radius:10px;
+}
+.todo-app h2 {
+    color:#002765;
+    display:flex;
+    align-items:center;
+    margin-bottom:20px;
+}
+.todo-app h2 img {
+    width:30px;
+    margin-left:7px;
+}
+.row {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background:#edeef0;
+    border-radius:30px;
+    padding-left:20px;
+    margin-bottom:25px; 
+}
+.row input {
+    flex:1;
+    padding:10px;
+    border:none;
+    outline: none;
+    background: transparent;
+}
+.row button {
+    border:none;
+    outline: none;
+    padding:16px 50px;
+    color:#fff;
+    background:#ff5945;
+    border-radius:40px;
+    font-size:16px;
+    cursor: pointer;
+}
+ul li {
+    list-style: none;
+    font-size:17px;
+    padding:12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position:relative;
+}
+ul li::before {
+    content:'';
+    position: absolute;
+    background-image: url(https://imgs.search.brave.com/G9SNbOFe3-eBruSoVAZiayJoQghcyLr60KuCQL8A0nU/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9pY29u/cy52ZXJ5aWNvbi5j/b20vcG5nLzEyOC9o/ZWFsdGhjYXRlLW1l/ZGljYWwvcHJvcGVy/dHktbWFsbC1tZWRp/Y2FsL3VuY2hlY2tl/ZC0yOC5wbmc);
+    height:28px;
+    width:28px;
+    background-position: center;
+    background-size: cover;
+    top:8px;
+    left:8px;
+    border-radius: 50%;
+}
+ul li.checked {
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(https://imgs.search.brave.com/lHea1vIchY7q6FGEGuIUhkmnxOmZHLI7XtU7w0-2DiM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjMv/MjU0LzM2Mi9zbWFs/bC9jaGVja21hcmst/c2lnbi1zeW1ib2wt/ZnJlZS1wbmcucG5n);
+}
+ul li span {
+    position:absolute;
+    right:0px;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size: 22px;
+    text-align: center;
+    line-height:40px;
+    border-radius:50%;
+}
+ul li span:hover {
+    background-color: #edeef0;
+}
